@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-eqiv="Content-Type" content="text/html" charset="euc-kr">
+	<meta name="viewport" content="width=1400, maximum-scale=1.5">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>메가로이어스 :: Lawyers for Lawyers</title>
+	<link type="text/css" rel="stylesheet" href="http://img.megalawyers.co.kr/common/css/common.css" />
+	<link type="text/css" rel="stylesheet" href="http://img.megalawyers.co.kr/common/css/layout.css" />
+	<link type="text/css" rel="stylesheet" href="http://img.megalawyers.co.kr/common/css/layout.submain.css" />
+	<!-- 맴버십 전용 스타일 -->
+	<link type="text/css" rel="stylesheet" href="http://img.megalawyers.co.kr/common/css/membership.css" />
+	<!--// 맴버십 전용 스타일 -->
+	<!--[if lt IE 9]><script>try{document.execCommand("BackgroundImageCache",false,true );}catch(e){}</script><![endif]-->
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script type="text/javascript" src="http://img.megalawyers.co.kr/common/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="http://img.megalawyers.co.kr/common/js/jquery.placeholder.js"></script>
+	<script type="text/javascript" src="http://img.megalawyers.co.kr/common/js/gimaLib.js"></script>
+	<!--2020.04.28 TweenMax 추가-->
+	<script type="text/javascript" src="http://img.megalawyers.co.kr/common/js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="http://img.megalawyers.co.kr/common/js/jquery.easing.min.js"></script>
+	<!--//2020.04.28 TweenMax 추가-->
+	<script type="text/javascript" src="http://img.megalawyers.co.kr/common/js/common.js?ver=20200211"></script>
+	<script type="text/javascript" src="http://img.megalawyers.co.kr/common/js/jquery.bxslider.min.js"></script>
+	
+	<link type="text/css" rel="stylesheet" href="http://img.megalawyers.co.kr/common/css/mega_bxslider_ui.css" />
+	<script type="text/javascript" src="http://img.megalawyers.co.kr/common/js/mega_bxslider_ui.js"></script>
+</head>
+<!--[if lt IE 8]><body class="IE"><![endif]-->
+<!--[if IE 8]><body class="IE IE8"><![endif]-->
+<!--[if IE 9]><body class="IE IE9"><![endif]-->
+<!--[if gt IE 9]><body class="IE IE10"><![endif]-->
+<body>
+<div id="wrap">
+	<!-- GNB -->
+	<div id="head" class="type1" style="height: 80px; background:#f3f3f5;">HEADER</div>
+	<!-- GNB -->
+	
+	<!--contents-->
+	<div class="contents">
+		
+		<!-- LY CBT 실적 홍보 페이지 -->
+		<style>
+			@import url('https://webfontworld.github.io/pretendard/Pretendard.css');
+			#footer{z-index:10;} /* 푸터 임시 z-index 조정 (다른 사이트 작업시 쓰지마세요) */
+			#footer .megalawyers{z-index:0} /*작업시 빼지마세요:  2020.12.22 이벤트 하단에 강의에서 강좌정보 클릭시 나오는 레이어팝업 풋터와 겹치는 현상 해결 */
+			#cbt { position: relative; background: #181c22; }
+			#cbt > [class^="stn_"] { position: relative; }
+			#cbt .inner { display: flex; justify-content: center; align-items: center; position: relative; width: 100%; height: 100%; margin: 0 auto; text-align: center; }
+			#cbt .inner_type02 { position: relative; width: 1200px; margin: 0 auto; text-align: center; z-index: 10;}
+
+			/* 패럴렉스 S */
+			#cbt .scene01 .bg01 { position:fixed; left:0; top:0; width:100%; height:100%; background:url('https://img.megalawyers.co.kr/2023/0922_cbt/scene01_ani_txt04.png') center center no-repeat; background-size: 100%;}
+			#cbt .scene01 .bg02 { position:fixed; left:0; top:0; width:100%; height:100%; background:url('https://img.megalawyers.co.kr/2023/0922_cbt/scene01_ani_txt04_2.png') 64% 29% no-repeat; z-index: 9;}
+			#cbt .scene01 .bg03 { position:fixed; left:0; top:0; width:100%; height:100%; background:url('https://img.megalawyers.co.kr/2023/0922_cbt/scene02_bg.jpg') 64% 29% no-repeat;}
+
+			#cbt .scene01 .parallax_container { position: relative; width: 100%; }
+			#cbt .scene01 .box { position:fixed; left:0%; }
+			#cbt .scene01 .text { position:fixed; left:0%; top:35%; width:100%; text-align:center; }
+			#cbt .scene01 .text p.txt1 { font-size:24px; font-weight:bold; color:#fff; }
+			#cbt .scene01 .text p.txt2 { padding-top:40px; font-size:18px; color:#fff; }
+			#cbt .scene01 .text2 { position:fixed; text-align: center; opacity: 0;  }
+			#cbt .scene01 .img01 {  position:fixed; text-align: center; opacity: 0;  }
+			/*// 패럴렉스 E */
+
+			#cbt .scene02 {}
+			#cbt .stn_02 { background: #fff url(https://img.megalawyers.co.kr/2023/0922_cbt/cbt_con02_bg.jpg) center 0 no-repeat; }
+			#cbt .stn_03 { background: #1400ff url(https://img.megalawyers.co.kr/2023/0922_cbt/cbt_con03_bg.jpg) center 0 no-repeat; }
+			#cbt .stn_02 .popup { position: absolute; display: none; pointer-events: none; }
+			#cbt .stn_02 .popup01 { top:1270px; left: -123px;}
+			#cbt .stn_02 .popup02 { bottom: 180px; left: -105px;}
+			#cbt .stn_02 .popup03 { bottom: -15px; right: -105px;}
+
+			#cbt .ani { position: absolute; text-align: center; opacity: 0;}
+			#cbt .stn_03 .con03_ani_tit01 { width: 100%; top: 358px; transform: scale(0);}
+			#cbt .stn_03 .con03_ani_tit02 { left:377px; top: 373px; }
+			#cbt .stn_03 .con03_ani_tit03 { width: 100%; top: 766px; transform: scale(0); }
+			#cbt .stn_03 .con03_ani_tit04 { left:467px; top: 847px; }
+			#cbt .stn_03 .con03_ani_tit05 { width: 100%; bottom: 452px; }
+			#cbt .stn_03 .con03_ani_img02 { left: -100px; top: 1242px;}
+			#cbt .stn_03 .con03_ani_img03 { right: -100px; top: 1229px;}
+
+			#cbt .scrollDown {position: fixed; left: 50%; bottom: 10%; transform: translate(-50%,-50%); z-index: 10; margin-left: -38px; width: 76px; height: 8px; text-align: center;}
+			#cbt .scrollDown:after {content: ''; display: inline-block; position: absolute; top: 43px; left: 0; width: 100%; height: 12px; background: url(http://img.megalawyers.co.kr/2022/0810_brand/icon_scrolldown_arr.png) center 0 no-repeat; -webkit-animation: arrani 1s .3s infinite ease-in-out alternate;-moz-animation: arrani 1s .3s infinite ease-in-out alternate;-ms-animation: arrani 1s .3s infinite ease-in-out alternate;-o-animation: arrani 1s .3s infinite ease-in-out alternate;animation: arrani 1s .3s infinite ease-in-out alternate;}
+
+			@keyframes arrani {
+				50% {top: 46px; opacity: .5;}
+				100% {top: 43px; opacity: 1;}
+			}
+
+			/* 대체텍스트 제공 */
+			.alt_hidden { position: absolute; margin: -1px; width: 1px; height: 1px; padding: 0; border: 0; white-space: nowrap; overflow: hidden; clip: rect(0, 0, 0, 0); }
+		</style>
+
+		<script type="text/javascript" src="http://img.megalawyers.co.kr/common/js/skrollr.min.js"></script>
+		<script type="text/javascript" src="https://img.megalawyers.co.kr/mobile/common/js/jquery.rwdImageMaps.min.js"></script>
+		<script>
+			$(document).ready(function(){
+
+				skrollr.init({
+					easing: {
+							WTF: Math.random,
+							inverted: function(p) {
+							return 1 - p;
+						}
+					}
+				});
+
+				$(window).scroll(function() {
+					var scrollDistance = $(window).scrollTop();
+
+					if (scrollDistance > 600) {
+						$('.scrollDown').fadeOut(200);
+					} else {
+						$('.scrollDown').fadeIn(200);
+					}
+				});
+				
+				$('img[usemap]').rwdImageMaps();
+				
+				$('area').hover(function(){
+					var popupId = $(this).data('popup');
+						$('#' + popupId).stop().fadeIn(300);
+						return false;
+					}, function(){
+						var popupId = $(this).data('popup');
+						$('#' + popupId).stop().fadeOut(300);
+						return false;
+				});	
+				
+			});
+			$(window).load(function () {
+				
+				var containerTop = $('.contents').offset().top+0;
+				var ani_start1 = $('#inner_type0301').offset().top;
+				var ani_start2 = $('#inner_type0302').offset().top;
+				var tl = new TimelineLite();
+				var t2 = new TimelineLite();
+			
+				/********** 모바일 기기로 접속 체크 **************************************************************************/
+				function isMobile(){
+					var UserAgent = navigator.userAgent;
+					if (UserAgent.match(/iPhone|iPad|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null) {
+						return true;
+					}else{
+						return false;
+					}
+				}
+
+				if ( isMobile() ){ //모바일 기기로 접속시  //////////////////////////////////////////////////////////////////
+
+					// skrollr.min.js 스크립트 삭제
+					var skrollrScript = document.querySelector('script[src="http://img.megalawyers.co.kr/common/js/skrollr.min.js"]');
+					skrollrScript.parentNode.removeChild(skrollrScript);
+
+					// skrollr.init 삭제
+					skrollr.init().destroy();
+
+					$('#cbt img').css('width','100%');
+					// $("html, body").css('overflow','visible');
+					$('.m_cbt_con_wrap').css('display','block');
+					$('.scene01').css('display','none');
+					$('.scene02').css('padding-top','0');	
+					
+					$(window).scroll(function(){
+					if( $(this).scrollTop() >= ani_start1-8000 ){
+						tl.to('#cbt .con03_ani_tit01', .9,{ opacity: 1, scale:1, transformOrigin: "center center", ease: Power4.easeOut,}, )
+						.to('#cbt .con03_ani_tit02', .8,{ opacity: 1, y:150, ease:Bounce.easeOut,}, )
+						.to('#cbt .con03_ani_img02', .8,{ opacity: 1, y:-150, ease: Power4.easeOut, delay:.5}, )
+						.to('#cbt .con03_ani_img03', .8,{ opacity: 1, y:-150, ease: Power4.easeOut,}, )
+					} 
+
+					if( $(this).scrollTop() >= ani_start2-7800 ){
+						t2.to('#cbt .con03_ani_tit03', .9,{ opacity: 1, scale:1, transformOrigin: "center center", ease: Power4.easeOut,}, )
+						.to('#cbt .con03_ani_tit04', .8,{ opacity: 1, y:150, ease:Bounce.easeOut,}, )
+						.to('#cbt .con03_ani_tit05', .8,{ opacity: 1, y:150,}, )
+					} 
+				});
+
+				} else { //PC 접속시 ////////////////////////////////////////////////////////////////////////////////////////
+					$(window).scroll(function(){
+					if( $(this).scrollTop() >= ani_start1-200 ){
+						tl.to('#cbt .con03_ani_tit01', .9,{ opacity: 1, scale:1, transformOrigin: "center center", ease: Power4.easeOut,}, )
+						.to('#cbt .con03_ani_tit02', .8,{ opacity: 1, y:150, ease:Bounce.easeOut,}, )
+						.to('#cbt .con03_ani_img02', .8,{ opacity: 1, y:-150, ease: Power4.easeOut, delay:.5}, )
+						.to('#cbt .con03_ani_img03', .8,{ opacity: 1, y:-150, ease: Power4.easeOut,}, )
+					} 
+
+					if( $(this).scrollTop() >= ani_start2+200 ){
+						t2.to('#cbt .con03_ani_tit03', .9,{ opacity: 1, scale:1, transformOrigin: "center center", ease: Power4.easeOut,}, )
+						.to('#cbt .con03_ani_tit04', .8,{ opacity: 1, y:150, ease:Bounce.easeOut,}, )
+						.to('#cbt .con03_ani_tit05', .8,{ opacity: 1, y:150,}, )
+					} 
+				});
+				
+				}//PC 접속시	
+			});
+
+		</script>
+		<div id="cbt">
+
+			<!-- 상단 패럴렉스 -->
+			<section class="scene01" style="position: fixed; top: 0;">
+				<span class="scrollDown"><img src="http://img.megalawyers.co.kr/2022/0810_brand/icon_scrolldown.png" alt="scroll down"></span>
+
+				<div class="parallax_container box" data-200="opacity:1; top:20%; transform: scale(0.7);" data-3500="opacity:0; top:-10%; transform: scale(2); ">
+					<div class="inner">
+						<img src="https://img.megalawyers.co.kr/2023/0922_cbt/scene01_ani_txt01_1.png" alt="법리적인 판단, 사실관계 등 법률문자 작성방법 중요, 온/오프라인 CBT Program 공통 적용, 진도별 모의고사, 기록형 실전연습, 법전협 모의시험, 변호사 시험 기술 등">
+					</div>
+				</div>
+
+				<div class="parallax_container box" data-600="opacity:1; top:20%; transform: scale(0.7);" data-3500="opacity:0; top:-10%; transform: scale(2); ">
+					<div class="inner">
+						<img src="https://img.megalawyers.co.kr/2023/0922_cbt/scene01_ani_txt01_2.png" alt="CBT 기반의 키워드 중심 사례/기록 첨삭자의 정밀 첨삭, 법리적인 판단, 사실관계 등 법률문자 작성방법 중요, 1:1 답안 빠른 CBT 연습 및 정밀첨삭 피드백">
+					</div>
+				</div>
+			
+				<div class="parallax_container text" data-1000="opacity:0; transform:scale(0.5);" data-2500="transform:scale(1); opacity:1;" data-3500="opacity:0">
+					<div class="inner">
+						<img src="https://img.megalawyers.co.kr/2023/0922_cbt/scene01_ani_logo.png" alt="로고">
+					</div>
+				</div>
+
+				<div class="parallax_container text2" data-3000="opacity:0; transform:translateY(-100%)" data-4000="top:20%; opacity:1; transition: all 0.25s; transform:translateX(0); z-index:10; transform:scale(1.1)" 
+				 data-5700="transform:scale(0.16); margin-top:4vw; left:0.5%;" data-7200="opacity:0;">
+					<div class="inner">
+						<img src="https://img.megalawyers.co.kr/2023/0922_cbt/scene01_ani_txt02.png" alt="CBT">
+					</div>
+				</div>
+
+				<div class="parallax_container img01" style="filter: grayscale(100%);" data-4000="opacity:0; top:-15%; transform:scale(0.2);" data-6000="opacity:1; transform:scale(1.3);" data-7000="opacity:0;">
+					<div class="inner">
+						<img src="https://img.megalawyers.co.kr/2023/0922_cbt/scene01_ani_img01.png" alt="현장이미지">		
+					</div>
+				</div>
+
+				<div class="parallax_container text2" data-5000="opacity:0; transform:scale(3);" data-6000="transform:scale(1); opacity:1; top:44%;" data-7000="opacity:0">
+					<div class="inner">
+						<img src="https://img.megalawyers.co.kr/2023/0922_cbt/scene01_ani_txt03.png" alt="제13회 변호사시험 CBT 적용 확정 그 이후,">
+					</div>
+				</div>
+
+				<div class="parallax_container text2" data-7000="opacity:0;" data-8000="opacity:1; top:15%;" data-11000="opacity:0;">
+					<div class="inner">
+						<img src="https://img.megalawyers.co.kr/2023/0922_cbt/scene01_ani_txt03_2.png" alt="제13회 변호사시험 CBT 적용 확정 그 이후,">
+					</div>
+				</div>
+				<div class="bg01" style="position: fixed" data-7000="opacity:0;" data-8000="opacity:1;" data-9000="opacity:0;"></div>
+				<div class="bg02" style="position: fixed" data-8000="opacity:0;" data-9000="opacity:1;" data-11000="opacity:0;"></div>
+				
+			</section>
+			<!--// 상단 패럴렉스 -->
+
+			<!-- 모바일 기기 접속시 노출 -->
+			<div class="mobile m_cbt_con_wrap" style="display:none;">
+				<img src="https://img.megalawyers.co.kr/2023/0922_cbt/m_cbt_top.jpg" alt="법리적인 판단, 사실관계 등 법률문자 작성방법 중요, 온/오프라인 CBT Program 공통 적용, 진도별 모의고사, 기록형 실전연습, 법전협 모의시험, 변호사 시험 기술 등 메가로이어스">
+				<img src="https://img.megalawyers.co.kr/2023/0922_cbt/m_cbt_con01.jpg" alt="CBT">
+				<img src="https://img.megalawyers.co.kr/2023/0922_cbt/m_cbt_con02.jpg" alt="제13회 변호사시험 CBT 적용 확정 그 이후, 메가로이어스는 왜 Why?">
+			</div>	
+			<!--// 모바일 기기 접속시 노출 -->
+
+			<section class="scene02" style="padding-top:11000px">
+				<div class="stn_02">
+					<div class="inner_type02">
+						<img src="https://img.megalawyers.co.kr/2023/0922_cbt/cbt_con02.png" alt="HISTORY" usemap="#cbt_con02" />
+						<div class="alt_hidden">
+							<ul>
+								<li>2022년 7월 법무부, 변호사시험 CBT 추진 관계기관 실무 간담회 개최</li>
+								<li>2023년 2월 메가로이어스 신촌 캠퍼스 및 이대 학습관 CBT 답안지 적용 및 CBT 대비 자습 공간 분리 운영 등 선제 대응</li>
+								<li>2023년 4월 법무부, 제13회 변호사시험 CBT 시행 확정 보고</li>
+								<li>2023년 6월 메가로이어스 1타 강사진 CBT 맞춤 학습법 공개, 캠퍼스 내 CBT 시스템 운영을 위한 설비 공사 완료</li>
+								<li>2023년 7월 메가로이어스 CBT 시스템 자체 개발</li>
+								<li>2023년 8월  메가로이어스 CBT 체험 모의고사 진행, CBT 첨삭PACK 상품 오픈</li>
+								<li>2023년 9월 공법 강성민 변호사 CBT 특강 유튜브 라이브 진행, CBT 시스템 법무부 기준 최적화 및 개선 진행</li>
+							</ul>
+						</div>
+						<map name="cbt_con02">
+							<area shape="rect" coords="112,1172,1173,1441" href="javascript:;" alt="2023.02" data-popup="popup-1" />
+							<area shape="rect" coords="112,1798,1091,1860" href="javascript:;" alt="2023.07" data-popup="popup-2" />
+							<area shape="rect" coords="112,1931,1135,2059" href="javascript:;" alt="2023.08" data-popup="popup-3" />
+						</map>
+
+						<div id="popup-1" class="popup popup01" >
+							<img src="https://img.megalawyers.co.kr/2023/0922_cbt/cbt_lyr01.png" alt="2023년 2월 메가로이어스 신촌 캠퍼스 및 이대 학습관 CBT 답안지 적용 및 CBT 대비 자습 공간 분리 운영 등 선제 대응 레이어팝업">
+						</div>
+						<div id="popup-2" class="popup popup02">
+							<img src="https://img.megalawyers.co.kr/2023/0922_cbt/cbt_lyr02.png" alt="2023년 7월 메가로이어스 CBT 시스템 자체 개발 레이어팝업">
+						</div>
+						<div id="popup-3" class="popup popup03">
+							<img src="https://img.megalawyers.co.kr/2023/0922_cbt/cbt_lyr03.png" alt="메가로이어스 CBT 체험 모의고사 진행 CBT 첨삭PACK 상품 오픈 레이어팝업">
+						</div>
+					</div>
+					
+				</div>
+				<div class="stn_03">
+					<div class="inner_type02" id="inner_type0301">
+						<span class="ani con03_ani_tit01"><img src="https://img.megalawyers.co.kr/2023/0922_cbt/con03_ani_tit01.png" alt="4월 CBT 확정 이후 단 6개월, 메가로이어스는 왜 이렇게 CBT에 집착했을까?"></span>
+						<span class="ani con03_ani_tit02"><img src="https://img.megalawyers.co.kr/2023/0922_cbt/con03_ani_tit02.png" alt="Why?"></span>
+						<span class="ani con03_ani_img02"><img src="https://img.megalawyers.co.kr/2023/0922_cbt/con03_ani_img02.png" alt="2022년 7월 CBT 도입 찬반 설문 법전원 재학생 81.8% 도입 찬성"></span>
+						<span class="ani con03_ani_img03"><img src="https://img.megalawyers.co.kr/2023/0922_cbt/con03_ani_img03.png" alt="2023년 2월 메가로이어스 이대학습관 1기 테스트 응시자 중 82%가 CBT로 테스트 진행"></span>
+						<img src="https://img.megalawyers.co.kr/2023/0922_cbt/cbt_con0301.jpg" alt="4월 CBT 확정 이후 단 6개월, 메가로이어스는 왜 이렇게 CBT에 집착했을까?" />	
+					</div>
+
+					<div class="inner_type02" id="inner_type0302">
+						<span class="ani con03_ani_tit03"><img src="https://img.megalawyers.co.kr/2023/0922_cbt/con03_ani_tit03.png" alt="메가로이어스가 앞서 CBT에 대해 끊임없이 연구하고 적용하고 개선합니다."></span>
+						<span class="ani con03_ani_tit04"><img src="https://img.megalawyers.co.kr/2023/0922_cbt/con03_ani_tit04.png" alt="Why?"></span>
+						<span class="ani con03_ani_tit05"><img src="https://img.megalawyers.co.kr/2023/0922_cbt/con03_ani_tit05.png" alt="오로지 법조인이 될 여러분을 위한다는 단 하나의 긍지로 변화에 앞서 기다립니다."></span>
+						<img src="https://img.megalawyers.co.kr/2023/0922_cbt/cbt_con0302.jpg" alt="미지의 영역에 과감히 도전하는 수많은 수험생, 그들의 불안함이 현실이 되지 않도록, 불안함이 익숙함이 될 수 있도록" />
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- //LY CBT 실적 홍보 페이지 -->
+				
+	</div>
+	<!--//contents-->
+	
+	<!-- BOTTOM -->
+	<div id="footer" style="height: 191px; background:#f3f3f5;">FOOTER</div>
+
+</div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		fnSetFocus( 'class' , 'contents' , 0 );
+	});
+</script> 
